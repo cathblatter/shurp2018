@@ -2,7 +2,8 @@ Package: shurp2018
 Type: Package
 Title: Functions for the reporting of SHURP2018-study
 Version: 0.1.0
-Author: Catherine Blatter
+Authors@R: c(
+    person("Catherine", "Blatter", email = "catherine.blatter@unibas.ch", role = c("aut", "cre")))
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
