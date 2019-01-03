@@ -1,48 +1,36 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-<!-- # <img src="man/figures/UStaR.jpg" align="right" alt="" height="150" /> -->
+# <img src="man/figures/shurp-hex.png" align="right" alt="" height="150" />
 
-<!-- # UStaR -->
+# shurp2018
 
-<!-- The UStaR-package was developed as an effort to easily share dataframes during -->
+The *shurp2018*-package was developed for developing reproducible
+individual reports of data from the SHURP (Swiss Nursing Homes Human
+Resources Project) study from 2018.  
+More information about SHURP 2018 is available here:
+<https://shurp.unibas.ch/>
 
-<!-- the statistic courses at the Institute of Nursing Science at University of Basel.  -->
+The package is designed to only work with data of the SHURP2018 study
+(not included here for data protection). In case anyone spots
+inconsitencies in the code, suggestions are welcome.
 
-<!-- <i>It's development emerged as a student project and serves as a 'space of learning'. -->
+## How to install and use the package?
 
-<!-- This means, that this package is possibly not working fine on your machine,  -->
+Latest versions of R (<https://cran.r-project.org/>) and RStudio
+(<https://www.rstudio.com/products/rstudio/download/#download>) are
+needed.
 
-<!-- you detect a bug or you have great ideas for improvement.   -->
+``` r
 
-<!-- In any case, come talk to us - usually we don't bite </i> -->
+# install the devtools-package to install from GitHub
+install.packages("devtools")
 
-<!-- ## How to install and use UStaR? -->
+# install the shurp2018-package from GitHub
+devtools::install_github("cathblatter/shurp2018")
 
-<!-- First of all, you need to have installed the latest version of R (https://cran.r-project.org/)  -->
+# once shurp2018 is installed, you just need to load it in every session
+library(shurp2018)
+```
 
-<!-- as well as RStudio (https://www.rstudio.com/products/rstudio/download/#download).  -->
-
-<!-- If you have installed the programmes, you're ready for the next step:  -->
-
-<!-- ``` R -->
-
-<!-- # install the devtools-package to install from GitHub -->
-
-<!-- install.packages("devtools") -->
-
-<!-- # install all suggested packages for UStaR to work -->
-
-<!-- install.packages("ggplot", "dplyr", "tidyr") -->
-
-<!-- # install the UStaR-package from GitHub -->
-
-<!-- devtools::install_github("INS-Basel/UStaR") -->
-
-<!-- # once UStaR is installed, you just need to load it in every session -->
-
-<!-- library(UStaR) -->
-
-<!-- ``` -->
-
-<!-- More information about the usage of the package is provided in the vignettes.  -->
+## Disclaimer
