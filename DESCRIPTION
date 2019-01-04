@@ -1,14 +1,14 @@
 Package: shurp2018
 Type: Package
 Title: Functions for the reporting of SHURP2018-study
-Version: 0.0.90000
+Version: 0.0.9000
 Authors@R: c(
     person("Catherine", "Blatter", email = "catherine.blatter@unibas.ch", role = c("aut", "cre")))
 Description: shurp2018 contains functions to create reproducible reports for the
           SHURP2018-study.
 License: file LICENSE
 URL: https://github.com/cathblatter/shurp2018
-BugReports: https://github.com/Icathblatter/shurp2018/issues
+BugReports: https://github.com/cathblatter/shurp2018/issues
 LazyData: true
 Depends: R (>= 2.10)
 Imports:

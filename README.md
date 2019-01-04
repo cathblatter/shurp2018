@@ -34,3 +34,6 @@ library(shurp2018)
 ```
 
 ## Disclaimer
+
+This package is still in development mode - no guarantee on using the
+functions. Please check manually if the results match your data\!
