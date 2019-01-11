@@ -7,9 +7,8 @@
 
 The *shurp2018*-package was developed for developing reproducible
 individual reports of data from the SHURP (Swiss Nursing Homes Human
-Resources Project) study from 2018.  
-More information about SHURP 2018 is available here:
-<https://shurp.unibas.ch/>
+Resources Project) study from 2018. More information about SHURP 2018 is
+available here: <https://shurp.unibas.ch/>
 
 The package is designed to only work with data of the SHURP2018 study
 (not included here for data protection). In case anyone spots
@@ -33,7 +32,7 @@ devtools::install_github("cathblatter/shurp2018")
 library(shurp2018)
 ```
 
-## Disclaimer
+### Disclaimer
 
 This package is still in development mode - no guarantee on using the
 functions. Please check manually if the results match your data\!
