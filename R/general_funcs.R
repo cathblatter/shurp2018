@@ -39,7 +39,7 @@ round_df <- function(df, digits) {
 #'
 #' @param x a vector
 #'
-#' @return a value
+#' @return n.valid() returns the number of fields not being NA in a vector
 #' @export
 #'
 #' @examples
@@ -58,6 +58,11 @@ n.valid <- function(x){
 #' @export
 #'
 #' @examples
+#' SHURP_syn <- SHURP_syn
+#' # this is not a dichotomized dataset, therefore you need
+#' # to change the cutoff
+#' n.yes(SHURP_syn$P1, cutoff = c(3,4))
+#'
 n.yes <- function(x, cutoff = 1){
 
   sum(x %in% cutoff, na.rm = T)

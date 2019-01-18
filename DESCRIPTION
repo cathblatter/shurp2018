@@ -16,7 +16,9 @@ Imports:
    ggplot2 (>= 2.2.1),
    tibble,
    magrittr,
-   kableExtra
+   kableExtra,
+   stats,
+   base
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
