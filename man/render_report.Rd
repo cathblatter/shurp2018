@@ -19,6 +19,3 @@ creates a PDF output named according to language and center
 \description{
 Render individual report as PDF - this works only with Rmd-files
 }
-\examples{
-render_report(language = "D", center = 148)
-}
