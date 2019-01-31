@@ -2,10 +2,11 @@
 #'
 #' @param x a vector
 #'
-#' @return
+#' @return the first element of the vector
 #' @export
 #'
-#' @examples
+#' @examples a <- c(1, 23, 4, 56, 7)
+#' getvartext(a)
 getvartext <- function(x){
 
   df <- x[1]

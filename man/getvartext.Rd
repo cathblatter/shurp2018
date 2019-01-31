@@ -9,6 +9,13 @@ getvartext(x)
 \arguments{
 \item{x}{a vector}
 }
+\value{
+the first element of the vector
+}
 \description{
 get text of variables from a specified text spreadsheet
+}
+\examples{
+a <- c(1, 23, 4, 56, 7)
+getvartext(a)
 }
