@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • shurp2018</title>
+<title>Render individual report as PDF - this works only with Rmd-files — render_report • shurp2018</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,7 +30,10 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Render individual report as PDF - this works only with Rmd-files — render_report" />
+
+<meta property="og:description" content="Render individual report as PDF - this works only with Rmd-files" />
+<meta name="twitter:card" content="summary" />
 
 
 
@@ -47,7 +50,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -94,90 +97,56 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Render individual report as PDF - this works only with Rmd-files</h1>
+    <small class="dont-index">Source: <a href='https://github.com/cathblatter/shurp2018/blob/master/R/render_report.R'><code>R/render_report.R</code></a></small>
+    <div class="hidden name"><code>render_report.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    
+    <p>Render individual report as PDF - this works only with Rmd-files</p>
+    
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
-
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="SHURP_syn.html">SHURP_syn</a></code> </p>
-        </td>
-        <td><p>SHURP_syn.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="getvartext.html">getvartext()</a></code> </p>
-        </td>
-        <td><p>get text of variables from a specified text spreadsheet</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="hello.html">hello()</a></code> </p>
-        </td>
-        <td><p>Hello, World!</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="n.na.html">n.na()</a></code> </p>
-        </td>
-        <td><p>get number of NAs in a vector</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="n.valid.html">n.valid()</a></code> </p>
-        </td>
-        <td><p>get sum of not NAs of a vector</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="n.yes.html">n.yes()</a></code> </p>
-        </td>
-        <td><p>get number of positive answers in a vector</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="prop.yes.html">prop.yes()</a></code> </p>
-        </td>
-        <td><p>get percentage of positive answers in a vector</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="render_report.html">render_report()</a></code> </p>
-        </td>
-        <td><p>Render individual report as PDF - this works only with Rmd-files</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="round_df.html">round_df()</a></code> </p>
-        </td>
-        <td><p>round all numeric variables of a df according to no. of digits</p></td>
-      </tr>
-    </tbody>
+    <pre class="usage"><span class='fu'>render_report</span>(<span class='kw'>file</span> <span class='kw'>=</span> <span class='st'>"index.Rmd"</span>, <span class='no'>language</span>, <span class='no'>center</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>file</th>
+      <td><p>the file to render, default = "index.Rmd"</p></td>
+    </tr>
+    <tr>
+      <th>language</th>
+      <td><p>a character - either "D" or "F"</p></td>
+    </tr>
+    <tr>
+      <th>center</th>
+      <td><p>a number - choose center number e.g. 999</p></td>
+    </tr>
     </table>
-  </div>
+    
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
+    <p>creates a PDF output named according to language and center</p>
+    
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>render_report</span>(<span class='kw'>language</span> <span class='kw'>=</span> <span class='st'>"D"</span>, <span class='kw'>center</span> <span class='kw'>=</span> <span class='fl'>148</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: path[1]="index.Rmd": No such file or directory</span></div><div class='output co'>#&gt; <span class='error'>Error in tools::file_path_as_absolute(input): file 'index.Rmd' does not exist</span></div></pre>
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-all-functions">All functions</a></li>
+      <li><a href="#arguments">Arguments</a></li>
+      
+      <li><a href="#value">Value</a></li>
+      
+      <li><a href="#examples">Examples</a></li>
     </ul>
+
   </div>
 </div>
 

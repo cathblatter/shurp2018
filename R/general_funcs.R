@@ -1,15 +1,16 @@
 #' get text of variables from a specified text spreadsheet
 #'
 #' @param x a vector
+#' @param y the nth element of a vector to extract, default = 1 (first)
 #'
-#' @return the first element of the vector
+#' @return returns the nth element of a vector
 #' @export
 #'
-#' @examples a <- c(1, 23, 4, 56, 7)
+#' @examples a <- c(77, 23, 4, 56, 7)
 #' getvartext(a)
-getvartext <- function(x){
+getvartext <- function(x, y = 1){
 
-  df <- x[1]
+  df <- x[y]
 
   text <- df
 

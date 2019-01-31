@@ -2,11 +2,13 @@
 % Please edit documentation in R/render_report.R
 \name{render_report}
 \alias{render_report}
-\title{Render individual report as PDF}
+\title{Render individual report as PDF - this works only with Rmd-files}
 \usage{
-render_report(language, center)
+render_report(file = "index.Rmd", language, center)
 }
 \arguments{
+\item{file}{the file to render, default = "index.Rmd"}
+
 \item{language}{a character - either "D" or "F"}
 
 \item{center}{a number - choose center number e.g. 999}
@@ -15,7 +17,7 @@ render_report(language, center)
 creates a PDF output named according to language and center
 }
 \description{
-Render individual report as PDF
+Render individual report as PDF - this works only with Rmd-files
 }
 \examples{
 render_report(language = "D", center = 148)

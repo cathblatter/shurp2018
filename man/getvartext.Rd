@@ -4,18 +4,20 @@
 \alias{getvartext}
 \title{get text of variables from a specified text spreadsheet}
 \usage{
-getvartext(x)
+getvartext(x, y = 1)
 }
 \arguments{
 \item{x}{a vector}
+
+\item{y}{the nth element of a vector to extract, default = 1 (first)}
 }
 \value{
-the first element of the vector
+returns the nth element of a vector
 }
 \description{
 get text of variables from a specified text spreadsheet
 }
 \examples{
-a <- c(1, 23, 4, 56, 7)
+a <- c(77, 23, 4, 56, 7)
 getvartext(a)
 }
