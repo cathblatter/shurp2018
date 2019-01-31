@@ -7,7 +7,7 @@
 #' @return creates a PDF output named according to language and center
 #' @export
 #'
-#' @examples render_report(language = "D", center = 148)
+#' @examples
 render_report <- function(file = "index.Rmd", language, center) {
   rmarkdown::render(file, params = list(
       language = language,
