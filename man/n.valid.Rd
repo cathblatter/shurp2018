@@ -10,7 +10,7 @@ n.valid(x)
 \item{x}{a vector}
 }
 \value{
-n.valid() returns the number of fields not being NA in a vector
+\code{n.valid()} returns the number of fields not being NA in a vector
 }
 \description{
 get sum of not NAs of a vector

@@ -41,7 +41,7 @@ round_df <- function(df, digits) {
 #'
 #' @param x a vector
 #'
-#' @return n.valid() returns the number of fields not being NA in a vector
+#' @return \code{n.valid()} returns the number of fields not being NA in a vector
 #' @export
 #'
 #' @examples
