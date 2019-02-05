@@ -18,7 +18,13 @@ Imports:
    magrittr,
    kableExtra,
    stats,
-   base
+   base,
+   graphics,  
+   grDevices,
+   utils,
+   datasets,
+   methods,
+   testthat
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
