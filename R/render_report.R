@@ -12,7 +12,7 @@ render_report <- function(file = "index.Rmd", language, center) {
   rmarkdown::render(file, params = list(
       language = language,
       center = center
-    ), envir = parent.frame(),
+    ), envir = new.env(),
     output_file = paste0("Individual_report-", language, "-", center, ".pdf")
   )
 }
