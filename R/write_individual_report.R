@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-render_report <- function(file = "index.Rmd", language, center) {
+write_individual_report <- function(file = "index.Rmd", language, center) {
   rmarkdown::render(file, params = list(
       language = language,
       center = center
