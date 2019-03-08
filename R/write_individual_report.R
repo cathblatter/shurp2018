@@ -13,6 +13,6 @@ write_individual_report <- function(file = "index.Rmd", language, center) {
       language = language,
       center = center
     ), envir = new.env(),
-    output_file = paste0("Individual_report-", language, "-", center, ".pdf")
+    output_file = paste0("individual_reports/Individual_report-", language, "-", center, ".pdf")
   )
 }
