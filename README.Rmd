@@ -4,6 +4,9 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+[![Build Status](https://travis-ci.org/cathblatter/shurp2018.png?branch=master)](https://travis-ci.org/cathblatter/shurp2018)
+
+
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,

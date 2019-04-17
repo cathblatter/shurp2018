@@ -1,6 +1,9 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+[![Build
+Status](https://travis-ci.org/cathblatter/shurp2018.png?branch=master)](https://travis-ci.org/cathblatter/shurp2018)
+
 # <img src="man/figures/shurp-hex.png" align="right" alt="" height="150" />
 
 # shurp2018 🚧
@@ -10,7 +13,7 @@ individual reports of data from the SHURP (Swiss Nursing Homes Human
 Resources Project) study from 2018. More information about SHURP 2018 is
 available here: <https://shurp.unibas.ch/>
 
-The package is designed to work with data of the SHURP2018 study
+The package is designed to only work with data of the SHURP2018 study
 (not included here for data protection). In case anyone spots
 inconsitencies in the code, suggestions are welcome.
 
