@@ -1,10 +1,10 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+# <img src="man/figures/shurp-hex.png" align="right" alt="" height="150" />
+
 [![Build
 Status](https://travis-ci.com/cathblatter/shurp2018.png?branch=master)](https://travis-ci.com/cathblatter/shurp2018)
-
-# <img src="man/figures/shurp-hex.png" align="right" alt="" height="150" />
 
 # shurp2018 🚧
 

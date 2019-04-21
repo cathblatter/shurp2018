@@ -4,9 +4,6 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-[![Build Status](https://travis-ci.com/cathblatter/shurp2018.png?branch=master)](https://travis-ci.com/cathblatter/shurp2018)
-
-
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -17,6 +14,8 @@ knitr::opts_chunk$set(
 ```
 
 # <img src="man/figures/shurp-hex.png" align="right" alt="" height="150" />
+
+[![Build Status](https://travis-ci.com/cathblatter/shurp2018.png?branch=master)](https://travis-ci.com/cathblatter/shurp2018)
 
 # shurp2018 `r emo::ji("construction")`
 
