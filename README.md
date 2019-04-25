@@ -4,7 +4,7 @@
 # <img src="man/figures/shurp-hex.png" align="right" alt="" height="150" />
 
 [![Build
-Status](https://travis-ci.com/cathblatter/shurp2018.png?branch=master)](https://travis-ci.com/cathblatter/shurp2018)
+Status](https://travis-ci.com/cathblatter/shurp2018.svg?branch=master)](https://travis-ci.com/cathblatter/shurp2018)
 
 # shurp2018 🚧
 
