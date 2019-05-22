@@ -9,6 +9,8 @@
 Status](https://travis-ci.com/cathblatter/shurp2018.svg?branch=master)](https://travis-ci.com/cathblatter/shurp2018)
 [![AppVeyor build
 status](https://ci.appveyor.com/api/projects/status/github/cathblatter/shurp2018?branch=master&svg=true)](https://ci.appveyor.com/project/cathblatter/shurp2018)
+[![Lifecycle:
+maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 <!-- badges: end -->
 
 # shurp2018 🚧
