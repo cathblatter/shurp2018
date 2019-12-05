@@ -78,17 +78,18 @@ n.yes <- function(x, cutoff = 1){
 #' @param digits no. of digits to round, default = 2
 #' @param restrict should answers be restricted to 'NA' when n < 10 'NA', default F
 #' @param cutoff a vector defining positive answers, default = 1 in a binary dataset
+#' @param restrict_level the number of answers for restriction: if n is below restrict level, answer is turned to NA
 #'
 #' @return
 #' @export
 #'
 #' @examples
-prop.yes <- function(x, cutoff = 1, round = T, digits = 2, restrict = F){
+prop.yes <- function(x, cutoff = 1, round = T, digits = 2L, restrict = F, restrict_level = 10L){
 
   n.valid <- n.valid(x)
 
   if (restrict == T) {
-    n.valid <- dplyr::case_when(n.valid >= 10 ~ n.valid)}
+    n.valid <- dplyr::case_when(n.valid >= restrict_level ~ n.valid)}
 
   result <- 100*sum(x %in% cutoff, na.rm = T)/n.valid
 
