@@ -4,7 +4,14 @@
 \alias{prop.yes}
 \title{get percentage of positive answers in a vector}
 \usage{
-prop.yes(x, cutoff = 1, round = T, digits = 2, restrict = F)
+prop.yes(
+  x,
+  cutoff = 1,
+  round = T,
+  digits = 2L,
+  restrict = F,
+  restrict_level = 10L
+)
 }
 \arguments{
 \item{x}{a vector}
@@ -16,6 +23,11 @@ prop.yes(x, cutoff = 1, round = T, digits = 2, restrict = F)
 \item{digits}{no. of digits to round, default = 2}
 
 \item{restrict}{should answers be restricted to 'NA' when n < 10 'NA', default F}
+
+\item{restrict_level}{the number of answers for restriction: if n is below restrict level, answer is turned to NA}
+}
+\value{
+
 }
 \description{
 get percentage of positive answers in a vector

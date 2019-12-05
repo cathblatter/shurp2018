@@ -13,6 +13,9 @@ dichotomize.E(df)
 Simply assign your dataframe like this:
 dichotomized_data <- \code{dichotomize.E(your_data)}}
 }
+\value{
+
+}
 \description{
 Automatically dichotomoize the E dataframes of SHURP2018
 }
