@@ -25,7 +25,8 @@ Imports:
    datasets,
    methods,
    testthat,
-   tableone
+   tableone,
+   tidyselect
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
