@@ -53,85 +53,85 @@ dichotomize.C <- function(df){
   edoku_c <- c("C132A", "C132B", "C132C", "C132D", "C132E", "C133")
 
   df %>%
-    mutate_at(.vars = vars(workenv_c),
+    mutate_at(.vars = tidyselect::all_of(workenv_c),
               .funs = list(~case_when(. %in% c(3, 4) ~ 1,
                                       . %in% c(1, 2) ~ 0))) %>%
-    mutate_at(.vars = vars(collab_c),
+    mutate_at(.vars = tidyselect::all_of(collab_c),
               .funs = list(~case_when(. %in% c(3, 4) ~ 1,
                                       . %in% c(1, 2) ~ 0))) %>%
-    mutate_at(.vars = vars(arbeitszuf_c),
+    mutate_at(.vars = tidyselect::all_of(arbeitszuf_c),
               .funs = list(~case_when(. %in% c(3, 4) ~ 1,
                                       . %in% c(1, 2) ~ 0))) %>%
-    mutate_at(.vars = vars(workfam_c),
+    mutate_at(.vars = tidyselect::all_of(workfam_c),
               .funs = list(~case_when(. %in% c(4, 5) ~ 1,
                                       . %in% c(1, 2, 3) ~ 0))) %>%
-    mutate_at(.vars = vars(inttoleave_c),
+    mutate_at(.vars = tidyselect::all_of(inttoleave_c),
               .funs = list(~case_when(. %in% c(4, 5) ~ 1,
                                       . %in% c(1, 2, 3) ~ 0))) %>%
-    mutate_at(.vars = vars(overtime_c),
+    mutate_at(.vars = tidyselect::all_of(overtime_c),
               .funs = list(~case_when(. %in% c(1) ~ 1,
                                       . %in% c(2, 3) ~ 2,
                                       . %in% c(4) ~ 3))) %>%
-    mutate_at(.vars = vars(freetime_c),
+    mutate_at(.vars = tidyselect::all_of(freetime_c),
               .funs = list(~case_when(. %in% c(1, 2) ~ 1,
                                       . %in% c(3) ~ 2,
                                       . %in% c(4, 5) ~ 3))) %>%
-    mutate_at(.vars = vars(saq_c),
+    mutate_at(.vars = tidyselect::all_of(saq_c),
               .funs = list(~case_when(. %in% c(4, 5) ~ 1,
                                       . %in% c(1, 2, 3) ~ 0))) %>%
-    mutate_at(.vars = vars(bernca_c),
+    mutate_at(.vars = tidyselect::all_of(bernca_c),
               .funs = list(~case_when(. %in% c(2, 3) ~ 1,
                                       . %in% c(77, 0, 1) ~ 0))) %>%
-    mutate_at(.vars = vars(qoc_c),
+    mutate_at(.vars = tidyselect::all_of(qoc_c),
               .funs = list(~case_when(. %in% c(3, 4) ~ 1,
                                       . %in% c(1, 2) ~ 0))) %>%
-    mutate_at(.vars = vars(qoc.trend_c),
+    mutate_at(.vars = tidyselect::all_of(qoc.trend_c),
               .funs = list(~case_when(. %in% c(2, 3) ~ 1,
                                       . %in% c(1) ~ 0))) %>%
-    mutate_at(.vars = vars(pcc_c),
+    mutate_at(.vars = tidyselect::all_of(pcc_c),
               .funs = list(~case_when(. %in% c(4, 5) ~ 1,
                                       . %in% c(1, 2, 3) ~ 0))) %>%
-    mutate_at(.vars = vars(gewaltarbeits_c),
+    mutate_at(.vars = tidyselect::all_of(gewaltarbeits_c),
               .funs = list(~case_when(. %in% c(5, 6) ~ 1,
                                       . %in% c(0, 1, 2, 3, 4) ~ 0))) %>%
-    mutate_at(.vars = vars(abspres_c),
+    mutate_at(.vars = tidyselect::all_of(abspres_c),
               .funs = list(~case_when(. %in% c(0) ~ 1,
                                       . %in% c(1) ~ 2,
                                       . %in% c(2, 3, 4) ~ 3))) %>%
-    mutate_at(.vars = vars(beschwerd_c),
+    mutate_at(.vars = tidyselect::all_of(beschwerd_c),
               .funs = list(~case_when(. %in% c(2, 3) ~ 1,
                                       . %in% c(1) ~ 0))) %>%
-    mutate_at(.vars = vars(beschwerd.zus_c),
+    mutate_at(.vars = tidyselect::all_of(beschwerd.zus_c),
               .funs = list(~case_when(. %in% c(2, 3, 4, 5) ~ 1,
                                       . %in% c(0, 1) ~ 0))) %>%
-    mutate_at(.vars = vars(mbi_c),
+    mutate_at(.vars = tidyselect::all_of(mbi_c),
               .funs = list(~case_when(. %in% c(4, 5, 6) ~ 1,
                                       . %in% c(0, 1, 2, 3) ~ 0))) %>%
-    mutate_at(.vars = vars(qualimpr_c),
+    mutate_at(.vars = tidyselect::all_of(qualimpr_c),
               .funs = list(~case_when(. %in% c(4, 5) ~ 1,
                                       . %in% c(1, 2, 3) ~ 0))) %>%
-    mutate_at(.vars = vars(medqi.general_c),
+    mutate_at(.vars = tidyselect::all_of(medqi.general_c),
               .funs = list(~case_when(. %in% c(4, 5) ~ 1,
                                       . %in% c(1, 2, 3) ~ 0))) %>%
-    mutate_at(.vars = vars(medqi.schmerz_c),
+    mutate_at(.vars = tidyselect::all_of(medqi.schmerz_c),
               .funs = list(~case_when(. %in% c(3, 4) ~ 1,
                                       . %in% c(1, 2) ~ 0))) %>%
-    mutate_at(.vars = vars(medqi.polymed_c),
+    mutate_at(.vars = tidyselect::all_of(medqi.polymed_c),
               .funs = list(~case_when(. %in% c(4, 5) ~ 1,
                                       . %in% c(1, 2, 3) ~ 0))) %>%
-    mutate_at(.vars = vars(medqi.maln_c),
+    mutate_at(.vars = tidyselect::all_of(medqi.maln_c),
               .funs = list(~case_when(. %in% c(4, 5) ~ 1,
                                       . %in% c(1, 2, 3) ~ 0))) %>%
-    mutate_at(.vars = vars(medqi.bem_c),
+    mutate_at(.vars = tidyselect::all_of(medqi.bem_c),
               .funs = list(~case_when(. %in% c(4, 5) ~ 1,
                                       . %in% c(1, 2, 3) ~ 0))) %>%
-    mutate_at(.vars = vars(admin_1_c),
+    mutate_at(.vars = tidyselect::all_of(admin_1_c),
               .funs = list(~case_when(. %in% c(1, 2) ~ 1,
                                       . %in% c(3, 4) ~ 0))) %>%
-    mutate_at(.vars = vars(admin_2_c),
+    mutate_at(.vars = tidyselect::all_of(admin_2_c),
               .funs = list(~case_when(. %in% c(1) ~ 1,
                                       . %in% c(2, 3) ~ 0))) %>%
-    mutate_at(.vars = vars(edoku_c),
+    mutate_at(.vars = tidyselect::all_of(edoku_c),
               .funs = list(~case_when(. %in% c(4, 5) ~ 1,
                                       . %in% c(1, 2, 3) ~ 0))) -> df2
 
@@ -216,42 +216,42 @@ dichotomize.E <- function(df){
   mbi_e <- c("E56", "E57")
 
   df %>%
-    mutate_at(.vars = vars(workenv_e),
+    mutate_at(.vars = tidyselect::all_of(workenv_e),
               .funs = list(~case_when(. %in% c(3, 4) ~ 1,
                                       . %in% c(1, 2) ~ 0))) %>%
-    mutate_at(.vars = vars(collab_e),
+    mutate_at(.vars = tidyselect::all_of(collab_e),
               .funs = list(~case_when(. %in% c(3, 4) ~ 1,
                                       . %in% c(1, 2) ~ 0))) %>%
-    mutate_at(.vars = vars(arbeitszuf_e),
+    mutate_at(.vars = tidyselect::all_of(arbeitszuf_e),
               .funs = list(~case_when(. %in% c(3, 4) ~ 1,
                                       . %in% c(1, 2) ~ 0))) %>%
-    mutate_at(.vars = vars(workfam_e),
+    mutate_at(.vars = tidyselect::all_of(workfam_e),
               .funs = list(~case_when(. %in% c(4, 5) ~ 1,
                                       . %in% c(1, 2, 3) ~ 0))) %>%
-    mutate_at(.vars = vars(inttoleave_e),
+    mutate_at(.vars = tidyselect::all_of(inttoleave_e),
               .funs = list(~case_when(. %in% c(4, 5) ~ 1,
                                       . %in% c(1, 2, 3) ~ 0))) %>%
-    mutate_at(.vars = vars(overtime_e),
+    mutate_at(.vars = tidyselect::all_of(overtime_e),
               .funs = list(~case_when(. %in% c(1) ~ 1,
                                       . %in% c(2, 3) ~ 2,
                                       . %in% c(4) ~ 3))) %>%
-    mutate_at(.vars = vars(saq_e),
+    mutate_at(.vars = tidyselect::all_of(saq_e),
               .funs = list(~case_when(. %in% c(4, 5) ~ 1,
                                       . %in% c(1, 2, 3) ~ 0))) %>%
-    mutate_at(.vars = vars(gewaltarbeits_e),
+    mutate_at(.vars = tidyselect::all_of(gewaltarbeits_e),
               .funs = list(~case_when(. %in% c(5, 6) ~ 1,
                                       . %in% c(0, 1, 2, 3, 4) ~ 0))) %>%
-    mutate_at(.vars = vars(abspres_e),
+    mutate_at(.vars = tidyselect::all_of(abspres_e),
               .funs = list(~case_when(. %in% c(0) ~ 1,
                                       . %in% c(1) ~ 2,
                                       . %in% c(2, 3, 4) ~ 3))) %>%
-    mutate_at(.vars = vars(beschwerd_e),
+    mutate_at(.vars = tidyselect::all_of(beschwerd_e),
               .funs = list(~case_when(. %in% c(2, 3) ~ 1,
                                       . %in% c(1) ~ 0))) %>%
-    mutate_at(.vars = vars(beschwerd.zus_e),
+    mutate_at(.vars = tidyselect::all_of(beschwerd.zus_e),
               .funs = list(~case_when(. %in% c(2, 3, 4, 5) ~ 1,
                                       . %in% c(0, 1) ~ 0))) %>%
-    mutate_at(.vars = vars(mbi_e),
+    mutate_at(.vars = tidyselect::all_of(mbi_e),
               .funs = list(~case_when(. %in% c(4, 5, 6) ~ 1,
                                       . %in% c(0, 1, 2, 3) ~ 0)))  -> df2
 
