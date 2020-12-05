@@ -5,8 +5,6 @@
 
 <!-- badges: start -->
 
-[![Build
-Status](https://travis-ci.com/cathblatter/shurp2018.svg?branch=master)](https://travis-ci.com/cathblatter/shurp2018)
 [![AppVeyor build
 status](https://ci.appveyor.com/api/projects/status/github/cathblatter/shurp2018?branch=master&svg=true)](https://ci.appveyor.com/project/cathblatter/shurp2018)
 [![Lifecycle:
@@ -31,7 +29,6 @@ Latest versions of R (<https://cran.r-project.org/>) and RStudio
 needed.
 
 ``` r
-
 # install the devtools-package to install from GitHub
 install.packages("devtools")
 
@@ -45,4 +42,4 @@ library(shurp2018)
 ### Disclaimer
 
 This package is still in development mode - no guarantee on using the
-functions. Please check manually if the results match your data\!
+functions. Please check manually if the results match your data!
