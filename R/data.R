@@ -34,3 +34,18 @@
 #' }
 #' @source SHURP 2018 study
 "QE_text"
+
+
+#' Item labels used for params reporting
+#'
+#' A dataset containing corresponding item texts for QE (including cutoffs for
+# "pct agreement") in all languages
+#'
+#' @format A data frame with 2 rows and 91 variables:
+#' \describe{
+#'   \item{var_name}{indicating what label}
+#'   \item{german}{german text to label}
+#'   \item{french}{french text to label}
+#' }
+#' @source SHURP 2018 study
+"label_data"
