@@ -13,8 +13,6 @@ create_dichoplot_table <- function(data,
                                    vars,
                                    restrict = TRUE,
                                    restrict_level = 10L){
-  if(!is.null(target_center)){
-    center_length <- base::length(target_center)}
 
   each_center <-
     data %>%
