@@ -5,6 +5,8 @@
 #' @param restrict defaults to TRUE, passed to shurp2018::prop.yes()
 #' @param restrict_level defaults to TRUE, passed to shurp2018::prop.yes()
 #'
+#' @importFrom rlang .data
+#'
 #' @return
 #' @export
 #'
