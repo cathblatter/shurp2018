@@ -21,13 +21,18 @@ ggBenchmarketing <- function(df,
                              language = "german"){
 
 
+  df <- create_dichoplot_table(data = df,
+                               var = {{col}},
+                               restrict = TRUE,
+                               restrict_level = 10L)
+
   subtitle <-
     shurp2018::label_data %>%
     dplyr::filter(var_name == "label_subtitle_benchmarketing") %>%
     dplyr::pull({{language}})
 
   # drop nas
-  df <- df %>% dplyr::drop_na({{col}})
+  df <- df %>% tidyr::drop_na({{col}})
 
   # defining the colours
   fill_values <- c("other" = "#b2abd2",

@@ -19,9 +19,9 @@ create_dichoplot_table <- function(data,
   each_center <-
     data %>%
     group_by(center) %>%
-    summarise_at(.data, .vars = tidyselect::all_of({{vars}}),
-                 .funs = ~shurp2018::prop.yes(., round = FALSE, restrict = restrict,
-                                              restrict_level = restrict_level)) %>%
+    summarise(across({{vars}},
+                 .fns = ~shurp2018::prop.yes(., round = FALSE, restrict = restrict,
+                                              restrict_level = restrict_level))) %>%
     ungroup() %>%
     mutate(center = as.character(center),
            center_label = as.character(center))
@@ -29,8 +29,9 @@ create_dichoplot_table <- function(data,
 
   national <-
     data %>%
-    summarise_at(.data, tidyselect::all_of({{vars}}),
-                 .funs = ~shurp2018::prop.yes(., round = FALSE, restrict = restrict, restrict_level = restrict_level)) %>%
+    summarise(across({{vars}},
+                 .fns = ~shurp2018::prop.yes(., round = FALSE, restrict = restrict,
+                                              restrict_level = restrict_level))) %>%
     ungroup() %>%
     mutate(center = as.character(999),
            center_label = "SHURP 2018")
