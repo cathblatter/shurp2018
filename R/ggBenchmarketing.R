@@ -53,20 +53,19 @@ ggBenchmarketing <- function(df,
 
 
 
-  # #  create
-  # if(pp_diff == FALSE){
-  #   base_plot <-
-  #     base_plot +
-  #     ggrepel::geom_label_repel(aes(colour = fill_values_column,
-  #                                   label = paste0(.data$center_label, ": ", scales::percent({{col}}, .1, 1))),
-  #                               data = filter(df, center %in% c(888, 999)),
-  #                               nudge_x = 0,
-  #                               nudge_y = 1,
-  #                               alpha = 1,
-  #                               label.size = .5,
-  #                               direction = "both",
-  #                               show.legend = F,
-  #                               size = 3.8) }
+  # #  create the center - labelling (ie. only the national mean)
+    base_plot <-
+      base_plot +
+      ggrepel::geom_label_repel(aes(colour = fill_values_column,
+                                    label = paste0(.data$center_label, ": ", scales::percent({{col}}, .1, 1))),
+                                data = filter(df, center %in% c(888, 999)),
+                                nudge_x = 0,
+                                nudge_y = 1,
+                                alpha = 1,
+                                label.size = .5,
+                                direction = "both",
+                                show.legend = F,
+                                size = 3.8)
   # if(pp_diff == TRUE){
   #
   #   subtitle_bb_diff <- if_else(df$ownership_di == "public", label_data$label_public, label_data$label_private)
