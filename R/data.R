@@ -38,8 +38,7 @@
 
 #' Item labels used for params reporting
 #'
-#' A dataset containing corresponding item texts for QE (including cutoffs for
-# "pct agreement") in all languages
+#' A dataset containing item labels
 #'
 #' @format A data frame with 2 rows and 91 variables:
 #' \describe{

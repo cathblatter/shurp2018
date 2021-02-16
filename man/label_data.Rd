@@ -19,6 +19,6 @@ SHURP 2018 study
 label_data
 }
 \description{
-A dataset containing corresponding item texts for QE (including cutoffs for
+A dataset containing item labels
 }
 \keyword{datasets}
