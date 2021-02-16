@@ -4,8 +4,10 @@
 \name{SHURP_syn}
 \alias{SHURP_syn}
 \title{SHURP_syn.}
-\format{A data frame with answers from 5311 nurses in  69 variables. More
-information is found in the vignette.}
+\format{
+A data frame with answers from 5311 nurses in  69 variables. More
+information is found in the vignette.
+}
 \usage{
 SHURP_syn
 }

@@ -6,7 +6,6 @@
 #' information is found in the vignette.
 "SHURP_syn"
 
-
 #' QC-Item text data in all languages
 #'
 #' A dataset containing corresponding item texts for QC (including cutoffs for
@@ -19,7 +18,8 @@
 #'   ...
 #' }
 #' @source SHURP 2018 study
-"QC_data"
+"QC_text"
+
 
 #' QE-Item text data in all languages
 #'
@@ -33,4 +33,4 @@
 #'   ...
 #' }
 #' @source SHURP 2018 study
-"QE_data"
+"QE_text"
