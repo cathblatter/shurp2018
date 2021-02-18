@@ -6,6 +6,7 @@
 #' @param restrict_level defaults to TRUE, passed to shurp2018::prop.yes()
 #'
 #' @importFrom rlang .data
+#' @import dplyr
 #'
 #' @return
 #' @export

@@ -1,7 +1,7 @@
 Package: shurp2018
 Type: Package
 Title: Functions for the reporting of SHURP2018-study
-Version: 0.0.4.9000
+Version: 0.0.4.9001
 Authors@R: c(
     person("Catherine", "Blatter", email = "catherine.blatter@unibas.ch", role = c("aut", "cre")))
 Description: shurp2018 contains functions to create reproducible reports for the
@@ -12,7 +12,7 @@ BugReports: https://github.com/cathblatter/shurp2018/issues
 LazyData: true
 Depends: R (>= 2.10)
 Imports:
-   dplyr (>= 0.7.5),
+   dplyr (>= 1.0.0),
    ggplot2 (>= 2.2.1),
    tibble,
    magrittr,

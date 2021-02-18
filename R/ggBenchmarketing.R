@@ -12,6 +12,9 @@
 #' @return
 #' @export
 #'
+#' @import dplyr
+#' @import ggplot2
+#'
 #' @examples
 ggBenchmarketing <- function(df,
                              col,
@@ -56,7 +59,7 @@ ggBenchmarketing <- function(df,
   # #  create the center - labelling (ie. only the national mean)
     base_plot <-
       base_plot +
-      ggrepel::geom_label_repel(aes(colour = fill_values_column,
+      ggrepel::geom_label_repel(ggplot2::aes(colour = fill_values_column,
                                     label = paste0(.data$center_label, ": ", scales::percent({{col}}, .1, 1))),
                                 data = filter(df, center %in% c(888, 999)),
                                 nudge_x = 0,
@@ -125,7 +128,7 @@ ggBenchmarketing <- function(df,
 
   if(text_caption == TRUE){
 
-    aa <- names(select(df, {{col}}))
+    aa <- names(dplyr::select(df, {{col}}))
 
     text_data <-
       if(stringr::str_detect(aa , "C\\d")){shurp2018::QC_text} else {shurp2018::QE_text}
