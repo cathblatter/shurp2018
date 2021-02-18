@@ -2,16 +2,14 @@
 #'
 #' @param df a dataframe
 #'
-#' @section How to?
-#'  Simply assign your dataframe like this:
-#'  dichotomized_data <- \code{dichotomize.C(your_data)}
+#'
 #'
 #'
 #' @return
 #' @export
 #' @import dplyr
 #'
-#' @examples
+#' @examples \dontrun{dichotomized_data <- dichotomize.C(your_data)}
 dichotomize.C <- function(df){
 
   workenv_c <- c("C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9")

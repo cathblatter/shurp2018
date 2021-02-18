@@ -15,3 +15,6 @@ dichotomize.C(df)
 \description{
 Automatically dichotomoize the C dataframes of SHURP2018
 }
+\examples{
+\dontrun{dichotomized_data <- dichotomize.C(your_data)}
+}

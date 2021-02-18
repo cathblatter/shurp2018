@@ -25,7 +25,7 @@ ggBenchmarketing <- function(df,
 
 
   df <- create_dichoplot_table(data = df,
-                               var = {{col}},
+                               vars = {{col}},
                                restrict = TRUE,
                                restrict_level = 10L)
 

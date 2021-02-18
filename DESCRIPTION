@@ -27,7 +27,11 @@ Imports:
    testthat,
    tableone,
    tidyselect,
-   rlang
+   rlang,
+   tidyr,
+   stringr,
+   ggrepel,
+   scales
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
