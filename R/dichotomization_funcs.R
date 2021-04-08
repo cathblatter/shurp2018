@@ -135,19 +135,23 @@ dichotomize.C <- function(df){
 
   # Manual conditional recoding for Variables
   # recoding of C129:130F
-  df2$C129_1[df2$C129 %in% 1] <- NA
+
+  # change from 2021-04-08: In discussion with FZU: remove this limitation for the
+  # _1 column, but keep it for the _2 column
+
+  # df2$C129_1[df2$C129 %in% 1] <- NA
   df2$C129_2[df2$C129 %in% 1] <- NA
-  df2$C130A1[df2$C129 %in% 1] <- NA
+  # df2$C130A1[df2$C129 %in% 1] <- NA
   df2$C130A2[df2$C129 %in% 1] <- NA
-  df2$C130B1[df2$C129 %in% 1] <- NA
+  # df2$C130B1[df2$C129 %in% 1] <- NA
   df2$C130B2[df2$C129 %in% 1] <- NA
-  df2$C130C1[df2$C129 %in% 1] <- NA
+  # df2$C130C1[df2$C129 %in% 1] <- NA
   df2$C130C2[df2$C129 %in% 1] <- NA
-  df2$C130D1[df2$C129 %in% 1] <- NA
+  # df2$C130D1[df2$C129 %in% 1] <- NA
   df2$C130D2[df2$C129 %in% 1] <- NA
-  df2$C130E1[df2$C129 %in% 1] <- NA
+  # df2$C130E1[df2$C129 %in% 1] <- NA
   df2$C130E2[df2$C129 %in% 1] <- NA
-  df2$C130F1[df2$C129 %in% 1] <- NA
+  # df2$C130F1[df2$C129 %in% 1] <- NA
   df2$C130F2[df2$C129 %in% 1] <- NA
 
   df2$C132A[df2$c132 %in% 1] <- NA
