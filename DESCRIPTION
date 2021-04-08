@@ -1,7 +1,7 @@
 Package: shurp2018
 Type: Package
 Title: Functions for the reporting of SHURP2018-study
-Version: 0.0.4.9001
+Version: 0.0.5.9001
 Authors@R: c(
     person("Catherine", "Blatter", email = "catherine.blatter@unibas.ch", role = c("aut", "cre")))
 Description: shurp2018 contains functions to create reproducible reports for the
