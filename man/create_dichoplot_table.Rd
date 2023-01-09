@@ -15,9 +15,6 @@ create_dichoplot_table(data, vars, restrict = TRUE, restrict_level = 10L)
 
 \item{restrict_level}{defaults to TRUE, passed to shurp2018::prop.yes()}
 }
-\value{
-
-}
 \description{
 Create a dichotomized table of a selection of variables including the national mean
 }

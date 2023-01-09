@@ -26,9 +26,6 @@ prop.yes(
 
 \item{restrict_level}{the number of answers for restriction: if n is below restrict level, answer is turned to NA}
 }
-\value{
-
-}
 \description{
 get percentage of positive answers in a vector
 }

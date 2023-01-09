@@ -26,9 +26,6 @@ ggBenchmarketing(
 
 \item{language}{"german" or "french" - default "german", select subtitle and}
 }
-\value{
-
-}
 \description{
 Create the so-called "benchmarketing chart" for overview of percentage agreement
 }

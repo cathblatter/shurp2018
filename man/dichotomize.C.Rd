@@ -9,9 +9,6 @@ dichotomize.C(df)
 \arguments{
 \item{df}{a dataframe}
 }
-\value{
-
-}
 \description{
 Automatically dichotomoize the C dataframes of SHURP2018
 }
