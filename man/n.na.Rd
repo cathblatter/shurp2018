@@ -9,9 +9,6 @@ n.na(x)
 \arguments{
 \item{x}{a vector}
 }
-\value{
-
-}
 \description{
 get number of NAs in a vector
 }

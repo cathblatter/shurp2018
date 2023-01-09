@@ -17,10 +17,3 @@ a value
 \description{
 get number of positive answers in a vector
 }
-\examples{
-SHURP_syn <- SHURP_syn
-# this is not a dichotomized dataset, therefore you need
-# to change the cutoff
-n.yes(SHURP_syn$P1, cutoff = c(3,4))
-
-}

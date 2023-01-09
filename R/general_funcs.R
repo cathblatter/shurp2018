@@ -59,11 +59,6 @@ n.valid <- function(x){
 #' @return a value
 #' @export
 #'
-#' @examples
-#' SHURP_syn <- SHURP_syn
-#' # this is not a dichotomized dataset, therefore you need
-#' # to change the cutoff
-#' n.yes(SHURP_syn$P1, cutoff = c(3,4))
 #'
 n.yes <- function(x, cutoff = 1){
 
